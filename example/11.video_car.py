@@ -34,13 +34,13 @@ px = Picarx()
 def take_photo():
     _time = strftime('%Y-%m-%d-%H-%M-%S',localtime(time()))
     name = 'photo_%s'%_time
-    path = f"{user_home}/Pictures/picar-x/"
+    path = f"rohan/Pictures/picar-x/"
     Vilib.take_photo(name, path)
     print('\nphoto save as %s%s.jpg'%(path,name))
 
 
 def move(operate:str, speed):
-
+    
     if operate == 'stop':
         px.stop()  
     else:
